@@ -120,9 +120,9 @@ fi
 for file in $FONTS
 do
 	if [ "$(uname)" == "Linux" ]; then
-		cp $file ~/.fonts/
+		cp $file ~/.fonts/.
 	else
-		cp $file ~/Library/Fonts/
+		cp $file ~/Library/Fonts/.
 	fi
 	echo "\033[0;33m $file installed \033[0m"
 done
