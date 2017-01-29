@@ -87,9 +87,6 @@ if [ -f ~/.private_aliases ]; then
 	source ~/.private_aliases
 fi
 
-# Python environment autosource
-source ~/.scripts/detect_virtualenvs.sh
-
 # OS spesifics
 if [ "$(uname)" '==' "Linux" ]; then
 	source ~/.aliases/linux
@@ -114,3 +111,13 @@ compinit
 
 export NVM_DIR="/Users/andrroy/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# DrittRuby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Mono (C# stuff)
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
